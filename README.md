@@ -139,10 +139,10 @@ This project was built for creativity during the hackathon.
 
 ## 👥 Team
 
-- Name 1
-- Name 2
-- Name 3
-- Name 4
+- Sneha Nannapaneni
+- Moksha Smruthi Morapakula
+- Sree Padma Priya Abburi
+  
 
 ---
 
