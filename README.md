@@ -1,10 +1,10 @@
-#👗 🔥 FitRoast –  Outfit Roaster & Style Suggestion Agent
+# FitRoast –  Outfit Roaster & Style Suggestion Agent
 
 FitRoast is a fun Visual AI agent that analyzes outfit images, roasts bad fashion choices, and suggests better styling using Gemini Vision.
 Built for the **Agents World: Visual AI Hackathon**, this project demonstrates how multimodal AI and FiftyOne plugins can be used to create a creative vision agent workflow.
 
----
-## 🚀 What it does
+
+##  What it does
 
 1. User uploads an outfit image through the frontend
 2. Gemini Vision analyzes the image
@@ -20,9 +20,9 @@ This creates a complete
 
 Vision Agent → Roast → Suggest → Inspect workflow
 
----
 
-## 🎯 Hackathon Requirements Covered
+
+##  Hackathon Requirements Covered
 
 - Working Visual AI prototype
 - Vision agent concept
@@ -33,9 +33,8 @@ Vision Agent → Roast → Suggest → Inspect workflow
 Bonus:
 - Frontend + Gemini + FiftyOne integration
 
----
 
-## 🧠 Agent Concept
+## Agent Concept
 
 FitRoast is a fashion vision agent that can:
 
@@ -47,7 +46,7 @@ FitRoast is a fashion vision agent that can:
 
 Instead of manually reviewing outfits, the agent automates the process using visual AI.
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -58,9 +57,8 @@ Instead of manually reviewing outfits, the agent automates the process using vis
 - Frontend (image upload UI)
 - dotenv
 
----
 
-## 📂 Project Structure
+## Project Structure
 
 FitRoast/
 │
@@ -77,9 +75,7 @@ backend/ → agent logic
 images/ → input outfits  
 .env → API key  
 
----
-
-## ⚙️ Setup
+##  Setup
 
 Install dependencies
 
@@ -102,9 +98,8 @@ Launch FiftyOne
 
 fiftyone app
 
----
 
-## 🧪 Demo Workflow
+##  Demo Workflow
 
 1. Upload outfit image
 2. Agent roasts the outfit
@@ -113,9 +108,7 @@ fiftyone app
 5. Use Gemini plugin to analyze image
 6. Show visual AI workflow
 
----
-
-## 🧠 Why FiftyOne?
+##  Why FiftyOne?
 
 FiftyOne is used to demonstrate a real visual AI workflow.
 
@@ -128,25 +121,22 @@ It allows:
 
 This makes the project more than just an API call.
 
----
 
-## 😂 Disclaimer
+##  Disclaimer
 
 Roasts are meant to be funny, not offensive.  
 This project was built for creativity during the hackathon.
 
----
 
-## 👥 Team
+## Team
 
 - Sneha Nannapaneni
 - Moksha Smruthi Morapakula
 - Sree Padma Priya Abburi
   
 
----
 
-## 🏆 Hackathon
+## Hackathon
 
 Agents World: Visual AI Hackathon  
 Voxel51 / FiftyOne
