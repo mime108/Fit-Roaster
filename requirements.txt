@@ -1,0 +1,5 @@
+fiftyone
+google-genai
+python-dotenv
+matplotlib
+pandas
