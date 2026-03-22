@@ -1,71 +1,60 @@
-# FitRoast –  Outfit Roaster & Style Suggestion Agent
+# Outfit Roaster - Visual AI Outfit Judge
 
-FitRoast is a fun Visual AI agent that analyzes outfit images, roasts bad fashion choices, and suggests better styling using Gemini Vision.
-Built for the **Agents World: Visual AI Hackathon**, this project demonstrates how multimodal AI and FiftyOne plugins can be used to create a creative vision agent workflow.
-
+Outfit Roaster is a fun Visual AI agent that analyzes outfit photos, roasts bad fashion choices, gives a rating, and suggests improvements using Gemini Vision.
+Built for the **Agents World: Visual AI Hackathon**, this project demonstrates how multimodal AI and FiftyOne plugins can be used to create a visual AI workflow.
 
 ##  What it does
 
 1. User uploads an outfit image through the frontend
 2. Gemini Vision analyzes the image
-3. The agent generates:
-   - Funny roast
+3. The system generates:
+   - Roast
    - Rating
-   - Style feedback
-   - Suggested outfit improvements (in text)
-4. The result is shown to the user
-5. The same image can be inspected using FiftyOne plugins
+   - Suggestions
+4. Results are shown in the frontend
+5. Image and metadata are saved to FiftyOne automatically
+6. Plugins are used to inspect and analyze results
 
-This creates a complete
+This creates a workflow:
 
-Vision Agent → Roast → Suggest → Inspect workflow
-
-
-
-##  Hackathon Requirements Covered
-
-- Working Visual AI prototype
-- Vision agent concept
-- Demo using FiftyOne plugins
-- Fun / creative hack
-- Multimodal AI workflow
-
-Bonus:
-- Frontend + Gemini + FiftyOne integration
+Frontend → Gemini → Roast & Rating → Save → FiftyOne → Plugins
 
 
 ## Agent Concept
 
-FitRoast is a fashion vision agent that can:
+Outfit Roaster works like a visual AI agent.
 
-- Understand outfit images
-- Critique styling
-- Suggest better outfit combinations
-- Provide humorous feedback
-- Inspect results using FiftyOne
+- Receives an image
+- Understands clothing and style
+- Generates feedback automatically
+- Suggests improvements in text
+- Stores results as structured data
+- Allows visual inspection using FiftyOne
 
-Instead of manually reviewing outfits, the agent automates the process using visual AI.
+Along with generating roast, rating, and outfit improvement suggestions in text, each result is automatically stored in FiftyOne as part of a visual dataset.
+
+Instead of just returning text, every analyzed outfit becomes part of a searchable visual collection.
 
 
 
 ## 🛠 Tech Stack
 
-- Python
-- Gemini Vision API
-- FiftyOne
-- FiftyOne Plugins
-- Frontend (image upload UI)
-- dotenv
+- Python  
+- Streamlit (frontend)  
+- Gemini API  
+- FiftyOne  
+- FiftyOne Plugins  
+- dotenv  
+
 
 
 ## Project Structure
 
-FitRoast/
+OutfitRoaster/
 │
-├── frontend/
-├── backend/
-├── images/
+├── app.py
 ├── agent.py
+├── images/
 ├── .env
 ├── README.md
 
@@ -80,47 +69,52 @@ images/ → input outfits
 Install dependencies
 
 pip install fiftyone  
+pip install streamlit
 pip install python-dotenv  
 pip install google-generativeai  
 
 
-Add API key
-
+Add API key in `.env`
 GEMINI_API_KEY=your_key_here
-
-
-Run backend
-
-python agent.py
-
-
-Launch FiftyOne
-
+Run frontend
+streamlit run app.py
+Open FiftyOne
 fiftyone app
-
 
 ##  Demo Workflow
 
+
 1. Upload outfit image
-2. Agent roasts the outfit
-3. Agent suggests improvements
-4. Open FiftyOne
-5. Use Gemini plugin to analyze image
-6. Show visual AI workflow
+2. Gemini analyzes the outfit
+3. Roast, rating, and suggestions appear
+4. Image is saved to FiftyOne
+5. Caption Viewer plugin shows captions
+6. Dashboard plugin shows statistics
 
-##  Why FiftyOne?
+## FiftyOne Plugins Used
 
-FiftyOne is used to demonstrate a real visual AI workflow.
+We used the following plugins:
 
-It allows:
+- Caption Viewer plugin  
+  → Used to display AI-generated captions and metadata
 
-- Inspecting images interactively
-- Running Gemini plugin queries
-- Exploring outputs visually
-- Debugging vision results
+- Dashboard plugin  
+  → Used to visualize rating and verdict statistics
 
-This makes the project more than just an API call.
+These plugins allow us to explore the results visually inside FiftyOne.
 
+## Why FiftyOne
+FiftyOne allows us to treat images as structured data.
+
+Each outfit is saved with metadata like:
+- rating
+- caption
+- verdict
+- tags
+
+Using plugins, we can filter, inspect, and analyze all outfits visually.
+
+This makes the project a visual AI workflow, not just an API call.
 
 ##  Disclaimer
 
